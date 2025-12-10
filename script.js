@@ -71,8 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     intersectingEntries.forEach((entry) => {
       // Show the element
-      console.log("Showing:", entry.target);
-      // entry.target.classList.remove("hidden");
       entry.target.classList.add("show");
 
       // Stop observing
@@ -164,13 +162,6 @@ function toggleGuestInput() {
 kehadiranButton.forEach((button) =>
   button.addEventListener("change", (e) => {
     toggleGuestInput();
-    // if (e.target.value === "attend") {
-    //   document.getElementById("guest").style.display = "grid";
-    //   console.log(document.querySelector("#guest select").value);
-    // } else {
-    //   document.getElementById("guest").style.display = "none";
-    //   console.log(document.getElementById("guest").value);
-    // }
   })
 );
 
@@ -219,7 +210,6 @@ form.addEventListener("submit", (e) => {
     <p class="wish-message">${form.message.value}</p>
   `;
 
-  console.log(newUcapan);
   const wishesList = document.getElementById("wishes-list");
   wishesList.insertBefore(newUcapan, wishesList.firstChild);
 });

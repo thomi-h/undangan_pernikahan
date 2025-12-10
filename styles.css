@@ -90,6 +90,7 @@ p {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100svh;
+  scroll-snap-stop: always;
 }
 
 .dear {

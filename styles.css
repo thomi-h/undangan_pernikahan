@@ -123,6 +123,7 @@ p {
   z-index: 1001;
   display: grid;
   margin-inline: auto;
+  background-color: #8a6955;
   background: url(src/firstImg-1440.webp);
   background-size: cover;
   background-position: center 55%;
@@ -164,12 +165,15 @@ p {
 }
 
 .animation-rollup {
-  animation: rollup 0.8s ease-in forwards;
+  animation: rollup 2.5s ease-in forwards;
 }
 
 @keyframes rollup {
   0% {
     transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
     opacity: 1;
   }
   100% {

@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const animationElement = document.getElementById("animation");
   const bukaUndanganBtn = document.getElementById("open-invitation");
   const landingSection = document.querySelector(".landing");
+  const homeSection = document.getElementById("home");
 
   // Path SVG untuk animasi
   const pausePath =
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- EVENT 1: TOMBOL BUKA UNDANGAN ---
   if (bukaUndanganBtn) {
     bukaUndanganBtn.addEventListener("click", () => {
+      homeSection.classList.add("show");
       // 1. Animasi CSS Undangan
       landingSection.classList.add("animation-rollup");
 
@@ -47,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // 3. Hilangkan Landing Page setelah animasi selesai
       setTimeout(() => {
         landingSection.style.display = "none";
-      }, 800);
+      }, 2500);
     });
   }
 

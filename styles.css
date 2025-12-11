@@ -104,7 +104,7 @@ p {
 }
 
 .section {
-  height: 100dvh;
+  height: 100lvh;
   display: grid;
   place-items: center;
   margin-inline: auto;
